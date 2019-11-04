@@ -1,0 +1,8 @@
+<div *ngIf="user.status === 'online' " class="userItem">
+    <span class="status" [ngClass]=(user.status)>
+    </span>
+    
+    <span class="userName">
+      {{user.displayName}} {{ user.status }}
+    </span>
+  </div>

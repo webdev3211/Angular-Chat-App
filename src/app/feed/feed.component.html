@@ -1,0 +1,6 @@
+<div class="feed">
+  <!-- | async is going to subscribe to our feed object which is getting set on ngOn methods this.feed -->
+  <div *ngFor="let message of feed | async" class = "message">
+    <app-message [chatMessage] = message ></app-message>
+  </div>
+</div>
